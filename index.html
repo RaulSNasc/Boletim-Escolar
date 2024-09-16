@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Boletim Escolar</title>
+</head>
+<body>
+    <nav>
+        <h1>ESCOLA ITALENTS</h1>
+        <img src="./images/italents-acelerados2.png" alt="logo da italents">
+    </nav>
+
+    <h1 class="titulo">BOLETIM ESCOLAR</h1>
+
+    <div class="container">
+      <hr>
+
+      <div class="colunas">
+        <div class="coluna-esquerda">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome">
+
+              <label for="curso">Curso:</label>
+              <input type="text" id="curso" name="curso">
+
+              <label for="ano">Ano letivo:</label>
+              <input type="text" id="ano" name="ano">
+              
+              <label for="periodo">Periodo:</label>
+              <input type="text" id="periodo" name="periodo">
+
+              <label for="especializacao">Especialização:</label>
+              <input type="text" id="especializacao" name="especializacao">
+              
+            </div>
+            
+            <div class="coluna-direita">
+              <label for="nota1">Nota 1° Bimestre:</label>
+              <input type="number" id="nota1" name="nota1">
+
+              <label for="nota2">Nota: 2° Bimestre</label>
+              <input type="number" id="nota2" name="nota2">
+
+              <label for="nota3">Nota: 3° Bimestre</label>
+              <input type="number" id="nota3" name="nota3">
+              
+              <label for="nota4">Nota: 4° Bimestre</label>
+              <input type="number" id="nota4" name="nota4">
+              
+              <div class="criar">
+                <button onclick="created()" class="bn3">CRIAR</button>
+                <button onclick="reset()" class="bn3">CRIAR NOVA TABELA</button>
+              </div>
+          </div>    
+        </div>    
+
+        <!-- tabela que exibira os resultados -->
+            <div class="tabela">
+                <table>
+                    <thead>
+                      <tr>
+                        <th class="cod">CÓDIGO E TÍTULO DO CURSO</th>
+                        <th class="nota">MÉDIA</th>
+                        <th class="situacao">SITUAÇÃO</th>
+                        <th class="info">INFO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td class="nota"></td>
+                        <td class="situacao"></td>
+                        <td class="infoAluno"></td>
+                    </tr>
+                      <tr>
+                        <td></td>
+                        <td class="nota"></td>
+                        <td class="situacao"></td>
+                        <td class="infoAluno"></td>
+                    </tr>
+                      <tr>
+                        <td></td>
+                        <td class="nota"></td>
+                        <td class="situacao"></td>
+                        <td class="infoAluno"></td>
+                    </tr>
+                      <tr>
+                        <td></td>
+                        <td class="nota"></td>
+                        <td class="situacao"></td>
+                        <td class="infoAluno"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="aluno.js"></script>
+</body>
+</html>
